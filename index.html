@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="inputbox">
+                <input type="text" id="valuebox">
+            </div>
+            <div class="cbox">
+                <button onclick="clearall()">C</button>
+            </div>
+            <div class="firstrow">
+                <div class="seven">
+                    <button onclick="buttonName(7)">7</button>
+                </div>
+                <div class="eight">
+                    <button onclick="buttonName(8)">8</button>
+                </div>
+                <div class="nine">
+                    <button onclick="buttonName(9)">9</button>
+                </div>
+                <div class="division">
+                    <button onclick="buttonName('/')">/</button>
+                </div>
+                <div class="secondrow">
+                    <div class="four">
+                        <button onclick="buttonName(4)">4</button>
+                    </div>
+                    <div class="five">
+                        <button onclick="buttonName(5)">5</button>
+                    </div>
+                    <div class="six">
+                        <button onclick="buttonName(6)">6</button>
+                    </div>
+                    <div class="intu">
+                        <button onclick="buttonName('*')">x</button>
+                    </div>
+                    <div class="thirdrow">
+                        <div class="one">
+                            <button onclick="buttonName(1)">1</button>
+                        </div>
+                        <div class="two">
+                            <button onclick="buttonName(2)">2</button>
+                        </div>
+                        <div class="three">
+                            <button onclick="buttonName(3)">3</button>
+                        </div>
+                        <div class="minze">
+                            <button onclick="buttonName('-')">-</button>
+                        </div>
+                    </div>
+                    <div class="fourthrow">
+                        <div class="dot">
+                            <button onclick="buttonName('.')">.</button>
+                        </div>
+                        <div class="zero">
+                            <button onclick="buttonName(0)">0</button>
+                        </div>
+                        <div class="plus">
+                            <button onclick="buttonName('+')">+</button>
+                        </div>
+                        <div class="equal">
+                            <button onclick="result()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script  src="index.js"></script>
+</body>
+</html>
